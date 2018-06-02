@@ -65,7 +65,7 @@ if(command === 'website') {
 }
   
 if(command === 'clanpack') {
-  const msg = message.channel.send("http://www.mediafire.com/file/cl310dvcwaee08e/Dutch-Roleplay-Clan.ClanPack-2.0.rar")
+  const msg = message.channel.send("Download hier onze clanpack! http://www.mediafire.com/file/cl310dvcwaee08e/Dutch-Roleplay-Clan.ClanPack-2.0.rar")
 }
 
 if(command === 'fivem') {
