@@ -35,6 +35,7 @@ if(command === 'help') {
   .addField(":clipboard: -botinfo", "==========")
   .addField("🎥 -youtube", "==========")
   .addField(":desktop: -website", "==========")
+  .addField(":open_file_folder: -clanpack", "==========")
   .addField(":pager: -fivem", "==========")
   .addField(":inbox_tray: -inmelden", "==========")
   .addField(":outbox_tray: -uitmelden", "==========")
@@ -61,6 +62,10 @@ if(command === 'youtube') {
 
 if(command === 'website') {
   const msg = message.channel.send("http://dutchroleplayclan.ga/?i=1")
+}
+  
+if(command === 'clanpack') {
+  const msg = message.channel.send("http://www.mediafire.com/file/cl310dvcwaee08e/Dutch-Roleplay-Clan.ClanPack-2.0.rar")
 }
 
 if(command === 'fivem') {
