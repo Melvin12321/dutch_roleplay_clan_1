@@ -102,7 +102,7 @@ if(command === 'training') {
 
   let reportEmbed = new Discord.RichEmbed()
   .setColor("#ff0800")
-  .addField("__**Theorie Training**__", `**Training aanvraag door:** ${rUser}\n\n**Aanvrag ingestuurd in:** ${message.channel}\n\n**Categorie | Datum:** ${wreason}\n\n`)
+  .addField("__**Theorie Training**__", `**Training aanvraag door:** ${rUser}\n\n**Aanvraag ingestuurd in:** ${message.channel}\n\n**Categorie | Datum:** ${wreason}\n\n`)
   .addField("Copyright\n", "Dutch Roleplay Clan© Copyright 2018 - 2019")
   let logs = message.guild.channels.find(`name`, "trainingen");
   if(!logs) return message.channel.send("Ik kan dit kanaal niet vinden.");
