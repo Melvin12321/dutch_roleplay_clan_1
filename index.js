@@ -157,6 +157,7 @@ if(command === 'bug') {
 
   message.delete().catch(O_o=>{});
   const msg = message.channel.send("Bedankt, je bug is gemeld!")
+  logs.send(bugEmbed)
   return;
 }
   
