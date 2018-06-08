@@ -151,7 +151,7 @@ if(command === 'bug') {
 
   let bugEmbed = new Discord.RichEmbed()
   .setColor("#ff0800")
-  .addField("__**Nieuwe Bug**__", `**Bug**: ${wreason}\n\n Bug gemeld door: ${rUser}`)
+  .addField("__**Nieuwe Bug**__", `**Bug**: ${wreason}\n\n Door: ${rUser}`)
   let logs = message.guild.channels.find(`name`, "bugs");
   if(!logs) return message.channel.send("Ik kan de logs channel niet vinden.");
 
