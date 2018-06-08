@@ -150,9 +150,13 @@ if(command === 'bug') {
   let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
   if(!rUser) return message.channel.send(":warning: Vul een bug in!");
 
-  
-  const msg = message.guild.channels.find(`name`, "bugs");
+  let bugEmbed = new Discord.RichEmbed()
+  .addField("**Bug**", "Test")
+  let logs = message.guild.channels.find(`name`, "bugs");
+  if(!logs) return message.channel.send("Ik kan het bug channel niet vinden.");
 
+  message.delete().catch(O_o=>{});
+  const msg = message.channel.send("Bedankt, je bug is gemeld!")
   return;
 }
   
