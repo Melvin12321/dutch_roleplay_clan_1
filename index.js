@@ -147,6 +147,7 @@ if(command === 'ptraining') {0
 
 if(command === 'bug') {
   let wreason = args.join("  ").slice(22);
+  let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
   if(!rUser) return message.channel.send(":warning: Vul een bug in!");
 
   let bugEmbed = new Discord.RichEmbed()
