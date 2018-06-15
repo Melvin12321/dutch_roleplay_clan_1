@@ -155,6 +155,7 @@ if(command === 'bug') {
   .addField("__**Nieuwe Bug**__", `**Bug**: ${wreason}\n\n Door: ${rUser}`)
   let logs = message.guild.channels.find(`name`, "bugs");
   if(!logs) return message.channel.send("Ik kan de logs channel niet vinden.");
+  message.delete()
 
   message.delete().catch(O_o=>{});
   const msg = message.channel.send("Bedank, je bug is gemeld!")
